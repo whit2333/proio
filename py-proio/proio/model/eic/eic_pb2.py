@@ -19,10 +19,32 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='proio/model/eic.proto',
   package='proio.model.eic',
   syntax='proto3',
-  serialized_pb=_b('\n\x15proio/model/eic.proto\x12\x0fproio.model.eic\"5\n\x07XYZTInt\x12\t\n\x01x\x18\x01 \x01(\x12\x12\t\n\x01y\x18\x02 \x01(\x12\x12\t\n\x01z\x18\x03 \x01(\x12\x12\t\n\x01t\x18\x04 \x01(\x12\"8\n\nXYZTDouble\x12\t\n\x01x\x18\x01 \x01(\x01\x12\t\n\x01y\x18\x02 \x01(\x01\x12\t\n\x01z\x18\x03 \x01(\x01\x12\t\n\x01t\x18\x04 \x01(\x01\"7\n\tXYZTFloat\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\t\n\x01z\x18\x03 \x01(\x02\x12\t\n\x01t\x18\x04 \x01(\x02\")\n\x06XYZInt\x12\t\n\x01x\x18\x01 \x01(\x12\x12\t\n\x01y\x18\x02 \x01(\x12\x12\t\n\x01z\x18\x03 \x01(\x12\",\n\tXYZDouble\x12\t\n\x01x\x18\x01 \x01(\x01\x12\t\n\x01y\x18\x02 \x01(\x01\x12\t\n\x01z\x18\x03 \x01(\x01\"+\n\x08XYZFloat\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\t\n\x01z\x18\x03 \x01(\x02\"\xd1\x01\n\x08Particle\x12\x0e\n\x06parent\x18\x01 \x03(\x04\x12\r\n\x05\x63hild\x18\x02 \x03(\x04\x12\x0b\n\x03pdg\x18\x03 \x01(\x11\x12+\n\x06vertex\x18\x04 \x01(\x0b\x32\x1b.proio.model.eic.XYZTDouble\x12%\n\x01p\x18\x05 \x01(\x0b\x32\x1a.proio.model.eic.XYZDouble\x12\x0c\n\x04mass\x18\x06 \x01(\x01\x12\x0e\n\x06\x63harge\x18\x07 \x01(\x02\x12\'\n\x04spin\x18\x08 \x01(\x0b\x32\x19.proio.model.eic.XYZFloat\"\xa3\x01\n\x06SimHit\x12\x10\n\x08volumeid\x18\x01 \x01(\x04\x12\x31\n\x0cglobalprepos\x18\x02 \x01(\x0b\x32\x1b.proio.model.eic.XYZTDouble\x12\x32\n\rglobalpostpos\x18\x03 \x01(\x0b\x32\x1b.proio.model.eic.XYZTDouble\x12\x0c\n\x04\x65\x64\x65p\x18\x04 \x01(\x02\x12\x12\n\nparticleid\x18\x05 \x01(\x04\x42\x45\n\x0bproio.modelB\x03\x45icZ1github.com/decibelcooper/proio/go-proio/model/eicb\x06proto3')
+  serialized_pb=_b('\n\x15proio/model/eic.proto\x12\x0fproio.model.eic\"5\n\x07XYZTInt\x12\t\n\x01x\x18\x01 \x01(\x12\x12\t\n\x01y\x18\x02 \x01(\x12\x12\t\n\x01z\x18\x03 \x01(\x12\x12\t\n\x01t\x18\x04 \x01(\x12\"8\n\nXYZTDouble\x12\t\n\x01x\x18\x01 \x01(\x01\x12\t\n\x01y\x18\x02 \x01(\x01\x12\t\n\x01z\x18\x03 \x01(\x01\x12\t\n\x01t\x18\x04 \x01(\x01\"7\n\tXYZTFloat\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\t\n\x01z\x18\x03 \x01(\x02\x12\t\n\x01t\x18\x04 \x01(\x02\")\n\x06XYZInt\x12\t\n\x01x\x18\x01 \x01(\x12\x12\t\n\x01y\x18\x02 \x01(\x12\x12\t\n\x01z\x18\x03 \x01(\x12\",\n\tXYZDouble\x12\t\n\x01x\x18\x01 \x01(\x01\x12\t\n\x01y\x18\x02 \x01(\x01\x12\t\n\x01z\x18\x03 \x01(\x01\"+\n\x08XYZFloat\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\t\n\x01z\x18\x03 \x01(\x02\"\xd1\x01\n\x08Particle\x12\x0e\n\x06parent\x18\x01 \x03(\x04\x12\r\n\x05\x63hild\x18\x02 \x03(\x04\x12\x0b\n\x03pdg\x18\x03 \x01(\x11\x12+\n\x06vertex\x18\x04 \x01(\x0b\x32\x1b.proio.model.eic.XYZTDouble\x12%\n\x01p\x18\x05 \x01(\x0b\x32\x1a.proio.model.eic.XYZDouble\x12\x0c\n\x04mass\x18\x06 \x01(\x01\x12\x0e\n\x06\x63harge\x18\x07 \x01(\x02\x12\'\n\x04spin\x18\x08 \x01(\x0b\x32\x19.proio.model.eic.XYZFloat\"\xa3\x01\n\x06SimHit\x12\x10\n\x08volumeid\x18\x01 \x01(\x04\x12\x31\n\x0cglobalprepos\x18\x02 \x01(\x0b\x32\x1b.proio.model.eic.XYZTDouble\x12\x32\n\rglobalpostpos\x18\x03 \x01(\x0b\x32\x1b.proio.model.eic.XYZTDouble\x12\x0c\n\x04\x65\x64\x65p\x18\x04 \x01(\x02\x12\x12\n\nparticleid\x18\x05 \x01(\x04\"\xd9\x01\n\x08ReconHit\x12\x0e\n\x06\x63\x65llid\x18\x01 \x01(\x04\x12\x0c\n\x04\x65\x64\x65p\x18\x02 \x01(\x02\x12/\n\x07\x65\x64\x65perr\x18\x03 \x03(\x0b\x32\x1e.proio.model.eic.UncertContrib\x12(\n\x03pos\x18\x04 \x01(\x0b\x32\x1b.proio.model.eic.XYZTDouble\x12.\n\x06poserr\x18\x05 \x03(\x0b\x32\x1e.proio.model.eic.UncertContrib\x12\x10\n\x08simhitid\x18\x07 \x03(\x04\x12\x12\n\nparticleid\x18\x06 \x03(\x04\"\xb4\x01\n\rUncertContrib\x12\x35\n\x04type\x18\x01 \x01(\x0e\x32\'.proio.model.eic.UncertContrib.DistType\x12\x10\n\x06scalar\x18\x02 \x01(\x02H\x00\x12,\n\x06vector\x18\x03 \x01(\x0b\x32\x1a.proio.model.eic.XYZTFloatH\x00\"#\n\x08\x44istType\x12\n\n\x06NORMAL\x10\x00\x12\x0b\n\x07UNIFORM\x10\x01\x42\x07\n\x05sigmaBE\n\x0bproio.modelB\x03\x45icZ1github.com/decibelcooper/proio/go-proio/model/eicb\x06proto3')
 )
 
 
+
+_UNCERTCONTRIB_DISTTYPE = _descriptor.EnumDescriptor(
+  name='DistType',
+  full_name='proio.model.eic.UncertContrib.DistType',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NORMAL', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='UNIFORM', index=1, number=1,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=1081,
+  serialized_end=1116,
+)
+_sym_db.RegisterEnumDescriptor(_UNCERTCONTRIB_DISTTYPE)
 
 
 _XYZTINT = _descriptor.Descriptor(
@@ -454,11 +476,145 @@ _SIMHIT = _descriptor.Descriptor(
   serialized_end=722,
 )
 
+
+_RECONHIT = _descriptor.Descriptor(
+  name='ReconHit',
+  full_name='proio.model.eic.ReconHit',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='cellid', full_name='proio.model.eic.ReconHit.cellid', index=0,
+      number=1, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='edep', full_name='proio.model.eic.ReconHit.edep', index=1,
+      number=2, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='edeperr', full_name='proio.model.eic.ReconHit.edeperr', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='pos', full_name='proio.model.eic.ReconHit.pos', index=3,
+      number=4, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='poserr', full_name='proio.model.eic.ReconHit.poserr', index=4,
+      number=5, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='simhitid', full_name='proio.model.eic.ReconHit.simhitid', index=5,
+      number=7, type=4, cpp_type=4, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='particleid', full_name='proio.model.eic.ReconHit.particleid', index=6,
+      number=6, type=4, cpp_type=4, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=725,
+  serialized_end=942,
+)
+
+
+_UNCERTCONTRIB = _descriptor.Descriptor(
+  name='UncertContrib',
+  full_name='proio.model.eic.UncertContrib',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='type', full_name='proio.model.eic.UncertContrib.type', index=0,
+      number=1, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='scalar', full_name='proio.model.eic.UncertContrib.scalar', index=1,
+      number=2, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='vector', full_name='proio.model.eic.UncertContrib.vector', index=2,
+      number=3, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _UNCERTCONTRIB_DISTTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+    _descriptor.OneofDescriptor(
+      name='sigma', full_name='proio.model.eic.UncertContrib.sigma',
+      index=0, containing_type=None, fields=[]),
+  ],
+  serialized_start=945,
+  serialized_end=1125,
+)
+
 _PARTICLE.fields_by_name['vertex'].message_type = _XYZTDOUBLE
 _PARTICLE.fields_by_name['p'].message_type = _XYZDOUBLE
 _PARTICLE.fields_by_name['spin'].message_type = _XYZFLOAT
 _SIMHIT.fields_by_name['globalprepos'].message_type = _XYZTDOUBLE
 _SIMHIT.fields_by_name['globalpostpos'].message_type = _XYZTDOUBLE
+_RECONHIT.fields_by_name['edeperr'].message_type = _UNCERTCONTRIB
+_RECONHIT.fields_by_name['pos'].message_type = _XYZTDOUBLE
+_RECONHIT.fields_by_name['poserr'].message_type = _UNCERTCONTRIB
+_UNCERTCONTRIB.fields_by_name['type'].enum_type = _UNCERTCONTRIB_DISTTYPE
+_UNCERTCONTRIB.fields_by_name['vector'].message_type = _XYZTFLOAT
+_UNCERTCONTRIB_DISTTYPE.containing_type = _UNCERTCONTRIB
+_UNCERTCONTRIB.oneofs_by_name['sigma'].fields.append(
+  _UNCERTCONTRIB.fields_by_name['scalar'])
+_UNCERTCONTRIB.fields_by_name['scalar'].containing_oneof = _UNCERTCONTRIB.oneofs_by_name['sigma']
+_UNCERTCONTRIB.oneofs_by_name['sigma'].fields.append(
+  _UNCERTCONTRIB.fields_by_name['vector'])
+_UNCERTCONTRIB.fields_by_name['vector'].containing_oneof = _UNCERTCONTRIB.oneofs_by_name['sigma']
 DESCRIPTOR.message_types_by_name['XYZTInt'] = _XYZTINT
 DESCRIPTOR.message_types_by_name['XYZTDouble'] = _XYZTDOUBLE
 DESCRIPTOR.message_types_by_name['XYZTFloat'] = _XYZTFLOAT
@@ -467,6 +623,8 @@ DESCRIPTOR.message_types_by_name['XYZDouble'] = _XYZDOUBLE
 DESCRIPTOR.message_types_by_name['XYZFloat'] = _XYZFLOAT
 DESCRIPTOR.message_types_by_name['Particle'] = _PARTICLE
 DESCRIPTOR.message_types_by_name['SimHit'] = _SIMHIT
+DESCRIPTOR.message_types_by_name['ReconHit'] = _RECONHIT
+DESCRIPTOR.message_types_by_name['UncertContrib'] = _UNCERTCONTRIB
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 XYZTInt = _reflection.GeneratedProtocolMessageType('XYZTInt', (_message.Message,), dict(
@@ -524,6 +682,20 @@ SimHit = _reflection.GeneratedProtocolMessageType('SimHit', (_message.Message,),
   # @@protoc_insertion_point(class_scope:proio.model.eic.SimHit)
   ))
 _sym_db.RegisterMessage(SimHit)
+
+ReconHit = _reflection.GeneratedProtocolMessageType('ReconHit', (_message.Message,), dict(
+  DESCRIPTOR = _RECONHIT,
+  __module__ = 'proio.model.eic_pb2'
+  # @@protoc_insertion_point(class_scope:proio.model.eic.ReconHit)
+  ))
+_sym_db.RegisterMessage(ReconHit)
+
+UncertContrib = _reflection.GeneratedProtocolMessageType('UncertContrib', (_message.Message,), dict(
+  DESCRIPTOR = _UNCERTCONTRIB,
+  __module__ = 'proio.model.eic_pb2'
+  # @@protoc_insertion_point(class_scope:proio.model.eic.UncertContrib)
+  ))
+_sym_db.RegisterMessage(UncertContrib)
 
 
 DESCRIPTOR.has_options = True

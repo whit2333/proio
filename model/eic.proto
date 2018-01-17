@@ -61,11 +61,44 @@ message SimHit {
     // helper ID to circumvent volume lookup from global position during
     // digitization
     uint64 volumeid = 1;
-    // position in mm and time in ns
+    // spatial in mm and time in ns
     XYZTDouble globalprepos = 2;
-    // position in mm and time in ns
+    // spatial in mm and time in ns
     XYZTDouble globalpostpos = 3;
     // energy in GeV
     float edep = 4;
     uint64 particleid = 5;
+}
+
+message ReconHit {
+    uint64 cellid = 1;
+    // energy in GeV
+    float edep = 2;
+    // Repeated uncertainty contributions imply a convolution.
+    repeated UncertContrib edeperr = 3;
+    // spatial in mm and time in ns
+    XYZTDouble pos = 4;
+    // Repeated uncertainty contributions imply a convolution.  For the case
+    // where uncertainties are specified in orthogonal directions, the
+    // convolution reduces to a product.
+    repeated UncertContrib poserr = 5;
+    repeated uint64 simhitid = 7;
+    // particle IDs responsible for energy deposition (fill only in the absence
+    // of corresponding simhitids)
+    repeated uint64 particleid = 6;
+}
+
+message UncertContrib {
+    enum DistType {
+        NORMAL = 0;
+        UNIFORM = 1;
+    }
+    DistType type = 1;
+    oneof sigma {
+        float scalar = 2;
+        // A vector uncertainty contribution represents the projection of the
+        // uncertainty distribution onto an axis in the direction of vector.
+        // Spatial components are in mm, and time is in ns.
+        XYZTFloat vector = 3;
+    }
 }
